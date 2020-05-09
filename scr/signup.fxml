@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="536.0" prefWidth="942.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eg.edu.alexu.csd.datastructure.GUI">
+   <children>
+      <ImageView fitHeight="213.0" fitWidth="210.0" layoutX="733.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.39999999999997726">
+         <image>
+            <Image url="@../../../../../image/drawkit-support-man-colour-thumbnail.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="32.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Username" wrappingWidth="88.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameSignup" layoutX="128.0" layoutY="91.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.leftAnchor="128.0" AnchorPane.topAnchor="91.0" />
+      <Text layoutX="30.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your E-mail" wrappingWidth="145.2000122070313">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailSignup" layoutX="33.0" layoutY="203.0" prefHeight="30.0" prefWidth="283.0" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="203.0" />
+      <Text layoutX="323.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@CSED.com" wrappingWidth="105.19995117187506">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Separator layoutX="121.0" layoutY="245.0" opacity="0.83" prefHeight="20.0" prefWidth="87.0" />
+      <Separator layoutX="254.0" layoutY="244.0" opacity="0.83" prefHeight="20.0" prefWidth="88.0" />
+      <Text layoutX="223.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+      <Button layoutX="30.0" layoutY="272.0" mnemonicParsing="false" onAction="#randomEmail" prefHeight="41.0" prefWidth="179.0" styleClass="buttonfirst" stylesheets="@../../../../../css/csspackage.css" text="Suggest Email address" textOverrun="LEADING_ELLIPSIS" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="453.0" layoutY="81.0" orientation="VERTICAL" prefHeight="303.0" prefWidth="6.0" AnchorPane.bottomAnchor="151.8" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="484.0" AnchorPane.topAnchor="81.0" />
+      <Text layoutX="479.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Password" wrappingWidth="88.0" AnchorPane.rightAnchor="376.0" AnchorPane.topAnchor="83.6552734375">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordSignup" layoutX="592.0" layoutY="91.0" prefHeight="30.0" prefWidth="321.0" AnchorPane.rightAnchor="29.799999999999955" AnchorPane.topAnchor="91.0" />
+      <Text layoutX="479.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password" wrappingWidth="87.19999999999993" AnchorPane.rightAnchor="376.80000000000007" AnchorPane.topAnchor="173.6552734375">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordConfirmSignup" layoutX="592.0" layoutY="181.0" prefHeight="30.0" prefWidth="322.0" AnchorPane.rightAnchor="29.799999999999955" AnchorPane.topAnchor="180.99999999999997" />
+      <Button layoutX="472.0" layoutY="225.0" mnemonicParsing="false" onAction="#passwordStrength" prefHeight="41.0" prefWidth="155.0" styleClass="buttonfirst" stylesheets="@../../../../../css/csspackage.css" text="Password Strenght" textOverrun="LEADING_ELLIPSIS" AnchorPane.rightAnchor="315.8" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="472.0" layoutY="305.0" mnemonicParsing="false" onAction="#randomPassword" prefHeight="41.0" prefWidth="155.0" styleClass="buttonfirst" stylesheets="@../../../../../css/csspackage.css" text="Suggest Password" textOverrun="LEADING_ELLIPSIS" AnchorPane.rightAnchor="315.8" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <CheckBox layoutX="478.0" layoutY="387.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="172.0" text="Keep me Remmebered" textAlignment="RIGHT" AnchorPane.rightAnchor="293.0" AnchorPane.topAnchor="387.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="330.0" layoutY="428.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="283.0" styleClass="buttonfirst" stylesheets="@../../../../../css/csspackage.css" text="Let's GO" textOverrun="LEADING_ELLIPSIS" AnchorPane.bottomAnchor="66.4" AnchorPane.leftAnchor="330.00000000000006" AnchorPane.rightAnchor="330.2">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/icons8_email_send_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="330.0" layoutY="480.0" mnemonicParsing="false" onAction="#homepage" prefHeight="41.0" prefWidth="283.0" styleClass="buttonfirst" stylesheets="@../../../../../css/csspackage.css" text="Back to Log-In" textAlignment="CENTER" AnchorPane.bottomAnchor="14.399999999999999" AnchorPane.leftAnchor="330.00000000000006" AnchorPane.rightAnchor="330.2">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text layoutX="395.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign-UP" wrappingWidth="115.59997558593756">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#4e56c5" layoutX="37.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*press Suggest Email to suggest one for you but you should enter your usename first" wrappingWidth="403.5999603271485" AnchorPane.bottomAnchor="142.4462890625" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="502.4000396728515" AnchorPane.topAnchor="358.3537109375">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#4e56c5" layoutX="479.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*press Password Strenght to show you your password strenght" wrappingWidth="381.19999694824224" AnchorPane.rightAnchor="82.80000305175776" AnchorPane.topAnchor="271.6626953125">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#4e56c5" layoutX="478.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*press Suggest Password to suggest strong password for you" wrappingWidth="369.99992370605474" AnchorPane.rightAnchor="95.00007629394526" AnchorPane.topAnchor="349.9716796875">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#4e56c5" layoutX="479.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*strong password should contains Upper letters , Lower letters , Digits &amp; Special characters" wrappingWidth="381.19999694824224" AnchorPane.rightAnchor="82.80000305175776" AnchorPane.topAnchor="134.3537109375">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#4e56c5" layoutX="31.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Your Username should have at least one Character" wrappingWidth="381.19999694824224">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="323.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@CSED.com" wrappingWidth="105.19995117187506">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="passwordStrength" fill="#676767" layoutX="647.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password Strenght" wrappingWidth="266.4000000000001" AnchorPane.rightAnchor="29.999999999999886" AnchorPane.topAnchor="231.0666015625">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Separator layoutX="647.0" layoutY="246.0" opacity="0.83" prefHeight="20.0" prefWidth="266.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="246.0" />
+      <Text fx:id="randomPassword" fill="#676767" layoutX="647.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suggested password" wrappingWidth="266.4000000000001" AnchorPane.rightAnchor="30.79999999999984" AnchorPane.topAnchor="309.0666015625">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Separator layoutX="647.0" layoutY="322.0" opacity="0.83" prefHeight="20.0" prefWidth="266.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="322.0" />
+      <Text fx:id="randomEmail" fill="#676767" layoutX="36.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suggested E-mail" wrappingWidth="283.19999999999993">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Separator layoutX="36.0" layoutY="339.0" opacity="0.83" prefHeight="20.0" prefWidth="283.0" AnchorPane.leftAnchor="35.99999999999994" AnchorPane.rightAnchor="624.2" />
+   </children>
+</AnchorPane>

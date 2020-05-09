@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane depthTest="DISABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eg.edu.alexu.csd.datastructure.GUI">
+   <children>
+      <VBox prefHeight="536.0" prefWidth="181.0" style="-fx-background-color: #22B6A8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/calligraphic-writing-hello_1020-450.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </ImageView>
+            <Pane prefHeight="14.0" prefWidth="186.0">
+               <children>
+                  <Separator layoutX="9.0" layoutY="1.0" opacity="0.43" prefHeight="14.0" prefWidth="167.0" />
+               </children>
+            </Pane>
+            <Button alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#setWelcome" prefHeight="62.0" prefWidth="186.0" styleClass="button1" stylesheets="@../../../../../css/csspackage.css" text="Inbox" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../image/icons8_inbox_60px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="246.0" styleClass="button1" stylesheets="@../../../../../css/csspackage.css" text="Sent" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../image/icons8_paper_plane_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="246.0" styleClass="button1" stylesheets="@../../../../../css/csspackage.css" text="Draft" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../image/icons8_postal_128px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="246.0" styleClass="button1" stylesheets="@../../../../../css/csspackage.css" text="Trash" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../image/icons8_trash_128px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="62.0" prefWidth="246.0" styleClass="button1" stylesheets="@../../../../../css/csspackage.css" text="Send new E-mail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../image/icons8_send_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Pane prefHeight="21.0" prefWidth="186.0">
+               <children>
+                  <Separator layoutX="9.0" layoutY="5.0" opacity="0.43" prefHeight="18.0" prefWidth="167.0" />
+               </children>
+            </Pane>
+            <Button alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#homepage" prefHeight="62.0" prefWidth="246.0" styleClass="button1" stylesheets="@../../../../../css/csspackage.css" text="Sign-Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../image/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+         </children></VBox>
+      <Pane layoutX="184.0" layoutY="118.0" prefHeight="487.0" prefWidth="758.0" style="-fx-background-color: #E9E9E9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="183.60000000000002" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="welcome" layoutX="581.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Mostafa !">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TableView layoutX="20.0" layoutY="143.0" prefHeight="324.0" prefWidth="718.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="sender" />
+                <TableColumn prefWidth="75.0" text="date" />
+                  <TableColumn prefWidth="136.00006103515625" text="num. of attachment" />
+                  <TableColumn minWidth="6.39996337890625" prefWidth="90.39996337890625" text="importance" />
+                  <TableColumn prefWidth="132.00009155273438" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
