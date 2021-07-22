@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="14.0.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email0">
+    <void property="body">
+     <string></string>
+    </void>
+    <void property="date">
+     <string>12/31/2020 20:42:51</string>
+    </void>
+    <void property="importance">
+     <object class="java.lang.Enum" id="Importance0" method="valueOf">
+      <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+      <string>veryImportant</string>
+     </object>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string></string>
+     </void>
+    </void>
+    <void property="seen">
+     <boolean>true</boolean>
+    </void>
+    <void property="sender">
+     <string>eng.maharadwan@hamo.com</string>
+    </void>
+    <void property="subject">
+     <string></string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email1">
+    <void property="body">
+     <string></string>
+    </void>
+    <void property="date">
+     <string>12/31/2020 20:42:59</string>
+    </void>
+    <void property="importance">
+     <object idref="Importance0"/>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string></string>
+     </void>
+    </void>
+    <void property="seen">
+     <boolean>true</boolean>
+    </void>
+    <void property="sender">
+     <string>eng.maharadwan@hamo.com</string>
+    </void>
+    <void property="subject">
+     <string></string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email2">
+    <void property="body">
+     <string>asdasdas</string>
+    </void>
+    <void property="date">
+     <string>12/31/2020 20:43:16</string>
+    </void>
+    <void property="importance">
+     <object idref="Importance0"/>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>ddddd</string>
+     </void>
+    </void>
+    <void property="seen">
+     <boolean>true</boolean>
+    </void>
+    <void property="sender">
+     <string>eng.maharadwan@hamo.com</string>
+    </void>
+    <void property="subject">
+     <string>dasda</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
