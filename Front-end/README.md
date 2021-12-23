@@ -1,4 +1,3 @@
-# cool
 
 ## Project setup
 ```
