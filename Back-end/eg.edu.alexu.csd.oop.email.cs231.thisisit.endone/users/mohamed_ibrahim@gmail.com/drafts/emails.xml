@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="15.0.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email0">
+    <void property="body">
+     <string>it will go to draft!!</string>
+    </void>
+    <void property="date">
+     <string>12/29/2020 21:12:03</string>
+    </void>
+    <void property="importance">
+     <object class="java.lang.Enum" method="valueOf">
+      <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+      <string>low</string>
+     </object>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string></string>
+     </void>
+    </void>
+    <void property="seen">
+     <boolean>true</boolean>
+    </void>
+    <void property="sender">
+     <string>mohamed_ibrahim@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>Draft</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

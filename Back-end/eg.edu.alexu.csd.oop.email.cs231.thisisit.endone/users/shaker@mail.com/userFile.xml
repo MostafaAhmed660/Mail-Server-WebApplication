@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="15.0.1" class="java.beans.XMLDecoder">
+ <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.User" id="User0">
+  <void property="defaultFolders">
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>defaultInbox</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\shaker@mail.com\defaultInbox</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>priorityInbox</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\shaker@mail.com\priorityInbox</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>trash</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\shaker@mail.com\trash</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>drafts</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\shaker@mail.com\drafts</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder" id="Folder0">
+     <void property="emailsList">
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email0">
+        <void property="body">
+         <string>Welcome in our mail server web application</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 20:53:21</string>
+        </void>
+        <void property="id">
+         <int>8861739</int>
+        </void>
+        <void property="importance">
+         <object class="java.lang.Enum" id="Importance0" method="valueOf">
+          <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+          <string>Important</string>
+         </object>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>mohamed_ibrahim@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>shaker@mail.com</string>
+        </void>
+        <void property="subject">
+         <string>Welcome</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email1">
+        <void property="body">
+         <string>Welcome in our mail server web application</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 20:53:21</string>
+        </void>
+        <void property="id">
+         <int>73406469</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance0"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>shaker@mail.com</string>
+        </void>
+        <void property="subject">
+         <string>Welcome</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="name">
+      <string>sentEmails</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\shaker@mail.com\sentEmails</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="emailAddress">
+   <string>shaker@mail.com</string>
+  </void>
+  <void property="passWord">
+   <string>11111111</string>
+  </void>
+  <void property="userName">
+   <string>mohamed</string>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="14.0.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email0">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>27337301</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email1">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>5894270</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email2">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>66785136</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email3">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>92031507</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email4">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>65612961</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email5">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>38888508</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email6">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>49852379</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email7">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>66085853</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email8">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>74023395</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email9">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>43875858</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email10">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>6359946</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email11">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>60235898</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email12">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/2013 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>2723178</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email13">
+    <void property="body">
+     <string>مش عايز قلق هنا</string>
+    </void>
+    <void property="date">
+     <string>01/21/203 @03:13 PM</string>
+    </void>
+    <void property="id">
+     <int>76968975</int>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>radwan@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>mohamed@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>hello man</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

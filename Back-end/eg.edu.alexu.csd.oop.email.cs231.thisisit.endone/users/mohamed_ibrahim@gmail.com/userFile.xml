@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="15.0.1" class="java.beans.XMLDecoder">
+ <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.User" id="User0">
+  <void property="contacts">
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Contact" id="Contact0">
+     <void property="emailAddresses">
+      <void method="add">
+       <string>mostafa@gmail.com</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>Mostafa</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Contact" id="Contact1">
+     <void property="emailAddresses">
+      <void method="add">
+       <string>radwan@gmail.com</string>
+      </void>
+      <void method="add">
+       <string>mohamed@gmail.com</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>radwan</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="defaultFolders">
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder" id="Folder0">
+     <void property="emailsList">
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email0">
+        <void property="body">
+         <string>Welcome in our mail server web application</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 20:53:21</string>
+        </void>
+        <void property="id">
+         <int>8861739</int>
+        </void>
+        <void property="importance">
+         <object class="java.lang.Enum" id="Importance0" method="valueOf">
+          <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+          <string>Important</string>
+         </object>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>mohamed_ibrahim@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>shaker@mail.com</string>
+        </void>
+        <void property="subject">
+         <string>Welcome</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="name">
+      <string>defaultInbox</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\mohamed_ibrahim@gmail.com\defaultInbox</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>priorityInbox</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\mohamed_ibrahim@gmail.com\priorityInbox</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder" id="Folder1">
+     <void property="emailsList">
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email1">
+        <void property="body">
+         <string>well done again</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 02:42:43</string>
+        </void>
+        <void property="id">
+         <int>18245311</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance0"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>well done</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email2">
+        <void property="body">
+         <string>mmmmmm</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 02:42:18</string>
+        </void>
+        <void property="id">
+         <int>75055415</int>
+        </void>
+        <void property="importance">
+         <object class="java.lang.Enum" id="Importance1" method="valueOf">
+          <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+          <string>low</string>
+         </object>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>hhh</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email3">
+        <void property="body">
+         <string>Welcome my friends</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 05:53:44</string>
+        </void>
+        <void property="id">
+         <int>60567620</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance0"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Welcome</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email4">
+        <void property="body">
+         <string>good my friends</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 05:58:04</string>
+        </void>
+        <void property="id">
+         <int>97502175</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Well well</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email5">
+        <void property="body">
+         <string>Welcome my friends</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 05:53:44</string>
+        </void>
+        <void property="id">
+         <int>44494099</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance0"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+         <void method="add">
+          <string>mohamed@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Welcome</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email6">
+        <void property="body">
+         <string>it will go to draft!!</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 21:09:59</string>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>drafts</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string></string>
+         </void>
+        </void>
+        <void property="seen">
+         <boolean>true</boolean>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Draft</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email7">
+        <void property="body">
+         <string>it will go to draft!!</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 21:10:07</string>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>drafts</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string></string>
+         </void>
+        </void>
+        <void property="seen">
+         <boolean>true</boolean>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Draft</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email8">
+        <void property="body">
+         <string>it will go to draft!!</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 21:10:14</string>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>drafts</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string></string>
+         </void>
+        </void>
+        <void property="seen">
+         <boolean>true</boolean>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Draft</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email9">
+        <void property="body">
+         <string></string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 21:10:35</string>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>drafts</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string></string>
+         </void>
+        </void>
+        <void property="seen">
+         <boolean>true</boolean>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string></string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="name">
+      <string>trash</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\mohamed_ibrahim@gmail.com\trash</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder" id="Folder2">
+     <void property="emailsList">
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email10">
+        <void property="body">
+         <string>it will go to draft!!</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 21:12:03</string>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string></string>
+         </void>
+        </void>
+        <void property="seen">
+         <boolean>true</boolean>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Draft</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="name">
+      <string>drafts</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\mohamed_ibrahim@gmail.com\drafts</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder" id="Folder3">
+     <void property="emailsList">
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email11">
+        <void property="body">
+         <string>good my friends</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 05:58:04</string>
+        </void>
+        <void property="id">
+         <int>11957505</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+         <void method="add">
+          <string>mohamed@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Well well</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email12">
+        <void property="body">
+         <string>good my friends</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 05:58:04</string>
+        </void>
+        <void property="id">
+         <int>20350801</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+         <void method="add">
+          <string>mohamed@gmail.com</string>
+         </void>
+         <void method="add">
+          <string>kamal@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Well well</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email13">
+        <void property="body">
+         <string>bbbbbbbbbb</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 06:35:03</string>
+        </void>
+        <void property="id">
+         <int>24590304</int>
+        </void>
+        <void property="importance">
+         <object class="java.lang.Enum" id="Importance2" method="valueOf">
+          <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+          <string>veryImportant</string>
+         </object>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>aaa</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email14">
+        <void property="body">
+         <string>take it easy</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 06:45:49</string>
+        </void>
+        <void property="id">
+         <int>24320831</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance2"/>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>mohamed@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>easy</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email15">
+        <void property="body">
+         <string>take it easy</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 06:45:49</string>
+        </void>
+        <void property="id">
+         <int>7148926</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance2"/>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>easy</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email16">
+        <void property="body">
+         <string>Hi my friend</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 02:12:27</string>
+        </void>
+        <void property="id">
+         <int>56544835</int>
+        </void>
+        <void property="importance">
+         <object class="java.lang.Enum" method="valueOf">
+          <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+          <string>medium</string>
+         </object>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Hi</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email17">
+        <void property="body">
+         <string>Hello My Friend</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 02:14:42</string>
+        </void>
+        <void property="id">
+         <int>31597485</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance2"/>
+        </void>
+        <void property="previousPositionForTrashedObj">
+         <string>sentEmails</string>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>radwan@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string>Hello</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email18">
+        <void property="body">
+         <string>it will go to draft!!</string>
+        </void>
+        <void property="date">
+         <string>12/29/2020 21:09:37</string>
+        </void>
+        <void property="id">
+         <int>49880864</int>
+        </void>
+        <void property="importance">
+         <object idref="Importance1"/>
+        </void>
+        <void property="recievers">
+         <void method="add">
+          <string>mostafa@gmail.com</string>
+         </void>
+        </void>
+        <void property="sender">
+         <string>mohamed_ibrahim@gmail.com</string>
+        </void>
+        <void property="subject">
+         <string></string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="name">
+      <string>sentEmails</string>
+     </void>
+     <void property="path">
+      <string>W:\CSED23\2nd year\Projects\Mail-Server Final\New folder\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\mohamed_ibrahim@gmail.com\sentEmails</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="emailAddress">
+   <string>mohamed_ibrahim@gmail.com</string>
+  </void>
+  <void property="passWord">
+   <string>11111111</string>
+  </void>
+  <void property="userName">
+   <string>mohamed</string>
+  </void>
+ </object>
+</java>
