@@ -1,7 +1,5 @@
 # Mail-Server-WebApplication
 
-this is the final version and my task was front-end using Vue.js
-
 Front-end with Vue.js and Back-end with spring-boot
 
 to run this project you need to run 
