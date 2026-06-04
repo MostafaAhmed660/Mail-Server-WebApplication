@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email0">
+    <void property="body">
+     <string>send me your day</string>
+    </void>
+    <void property="date">
+     <string>06/03/2026 21:09:36</string>
+    </void>
+    <void property="id">
+     <int>99466118</int>
+    </void>
+    <void property="importance">
+     <object class="java.lang.Enum" method="valueOf">
+      <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+      <string>veryImportant</string>
+     </object>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>mgmido463@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>wfs@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>ok </string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Email" id="Email1">
+    <void property="body">
+     <string>fafds</string>
+    </void>
+    <void property="date">
+     <string>06/04/2026 10:35:05</string>
+    </void>
+    <void property="id">
+     <int>96840823</int>
+    </void>
+    <void property="importance">
+     <object class="java.lang.Enum" method="valueOf">
+      <class>eg.edu.alexu.csd.oop.email.cs23.demo.Model.EmailManagment.Importance</class>
+      <string>medium</string>
+     </object>
+    </void>
+    <void property="recievers">
+     <void method="add">
+      <string>mgmido463@gmail.com</string>
+     </void>
+    </void>
+    <void property="sender">
+     <string>wfs@gmail.com</string>
+    </void>
+    <void property="subject">
+     <string>fsfsdf</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

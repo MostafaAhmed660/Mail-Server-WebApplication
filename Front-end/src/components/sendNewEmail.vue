@@ -1,42 +1,48 @@
 <template>
-    <v-container
-        class="py-8 px-6"
-        fluid
-    >
+    <v-container class="compose-page py-8 px-6" fluid>
+        <section class="ms-section-header">
+            <span class="ms-section-icon">
+                <v-icon color="white" size="30">mdi-email-plus-outline</v-icon>
+            </span>
+            <h1 class="ms-section-title">Compose New Email</h1>
+        </section>
         <v-row>
           <v-col
             cols="12"
           >
-            <v-card>
-
-                <v-img
-                    height="90px"
-                    src="..\assets\maintittle6.jpg"
-                >
-                <v-card-title class="white--text mt-5">
-                    <h2>Sending A New E-Mail</h2>
-                </v-card-title>
-                </v-img>
-
+            <v-card class="compose-card ms-card" flat>
                 <v-card-text>
                     <v-row>
                       <v-col md="11">
-                        <v-row v-for="(reciever,r) in receiverEmailAddress" :key=r>
+                        <v-row v-for="(reciever,r) in receiverEmailAddress" :key=r class="receiver-row">
                             <v-text-field
                                 v-model="receiverEmailAddress[r]"
                                 label="To*"
                                 required
-                                prepend-icon="mdi-arrow-top-left-thick"
+                                outlined
+                                dense
+                                prepend-inner-icon="mdi-account-arrow-left-outline"
+                                class="rounded-lg"
+                                placeholder="recipient@example.com"
                                 ></v-text-field>
                         </v-row>
                       </v-col>       
-                        <v-col >
+                        <v-col class="add-recipient-col">
+                            <v-tooltip bottom>
+                                <template v-slot:activator="{ on, attrs }">
                             <v-btn
+                                v-bind="attrs"
+                                v-on="on"
+                                color="primary"
+                                class="add-recipient-btn"
                                 icon
                                 @click="addReceiver"
                             >
                                 <v-icon>mdi-account-plus</v-icon>
                             </v-btn>
+                                </template>
+                                <span>Add recipient</span>
+                            </v-tooltip>
                         </v-col>
                     </v-row>
 
@@ -45,35 +51,46 @@
                         v-model="subject"
                         label="Subject*"
                         required
-                        prepend-icon="mdi-tag-text"
+                        outlined
+                        dense
+                        prepend-inner-icon="mdi-tag-text-outline"
+                        class="rounded-lg"
                         ></v-text-field>
                     </v-col>
 
                     <v-col>
                     <v-textarea
-                        filled
+                        outlined
                         name="input-7-4"
-                        label="write your body of your email here"
+                        label="Write your email body"
                         v-model="body"
+                        class="rounded-lg compose-body"
+                        rows="10"
                         
                     ></v-textarea>
                     </v-col>
 
                        <v-row>
                     <v-col md="6">
+                    <div class="attachment-zone">
+                    <v-icon color="primary" size="34">mdi-paperclip</v-icon>
                     <v-file-input
                        v-model="file"
                        @click="addToAttachmentList(file)"
-                       hide-input
                         truncate-length="100"
-                        label="Adding Attachment"
-                    >Add attachment
+                        label="Add attachment"
+                        prepend-icon=""
+                        outlined
+                        dense
+                        hide-details
+                    >
                     </v-file-input>
+                    </div>
                     </v-col>
                  
                     <v-col  >
-                        <span class="subheading">Mail Importance</span>
-                        <v-card-text>
+                        <div class="importance-card">
+                        <span class="importance-title">Mail Importance</span>
                             <v-slider
                                 v-model="importance"
                                 :tick-labels="importanceList"
@@ -81,8 +98,10 @@
                                 step="1"
                                 ticks="always"
                                 tick-size="4"
+                                color="primary"
+                                track-color="rgba(45, 49, 66, 0.16)"
                             ></v-slider>
-                        </v-card-text>
+                        </div>
                     </v-col>
                     </v-row>
 
@@ -95,25 +114,31 @@
                     </v-col> -->
 
 
-                    <v-divider class="mt-12"></v-divider>
+                    <v-divider class="mt-8"></v-divider>
 
-                    <v-card-actions>
-                        <v-btn text
+                    <v-card-actions class="compose-actions">
+                        <v-btn
+                        class="ms-action-btn"
+                        outlined
+                        color="secondary"
                         @click="reset">
+                            <v-icon left>mdi-refresh</v-icon>
                             Reset E-Mail
                         </v-btn>
 
 
                         <v-spacer></v-spacer>
-                        <v-btn text>
+                        <v-btn class="ms-action-btn" text color="secondary">
                             Cancel
                         </v-btn>
                     
                     <v-btn
                         color="primary"
-                        text
+                        dark
+                        class="ms-action-btn send-btn"
                         @click="send"
                     >
+                        <v-icon left>mdi-send</v-icon>
                         Send
                     </v-btn>
 
@@ -121,12 +146,15 @@
 
                     <v-snackbar
                       v-model="snackbar"
+                      timeout="3000"
+                      rounded="pill"
+                      color="grey darken-3"
                     >
                       {{ text }}
 
                       <template v-slot:action="{ attrs }">
                         <v-btn
-                          color="blue"
+                          color="primary"
                           text
                           v-bind="attrs"
                           @click="snackbar = false"
@@ -212,6 +240,77 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.compose-card {
+    padding: 10px;
+}
 
+.receiver-row {
+    padding: 0 12px;
+}
+
+.add-recipient-col {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.add-recipient-btn {
+    background: rgba(255, 144, 98, 0.12);
+}
+
+.compose-body >>> textarea {
+    line-height: 1.6;
+}
+
+.attachment-zone {
+    align-items: center;
+    background: rgba(255, 144, 98, 0.06);
+    border: 1px dashed rgba(255, 144, 98, 0.55);
+    border-radius: 16px;
+    display: flex;
+    gap: 14px;
+    min-height: 96px;
+    padding: 18px;
+}
+
+.attachment-zone >>> .v-input {
+    flex: 1;
+}
+
+.importance-card {
+    background: rgba(45, 49, 66, 0.035);
+    border: 1px solid rgba(45, 49, 66, 0.08);
+    border-radius: 16px;
+    min-height: 96px;
+    padding: 18px 22px 4px;
+}
+
+.importance-title {
+    color: var(--ms-text);
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.compose-actions {
+    padding: 18px 12px 4px;
+}
+
+.send-btn {
+    box-shadow: 0 10px 22px rgba(255, 144, 98, 0.28);
+}
+
+@media (max-width: 700px) {
+    .compose-actions {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .compose-actions .spacer {
+        display: none;
+    }
+}
 </style>

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Folder {
 	private String name;
 	private String path;
-	private File file;
+	private transient File file;
 	private ArrayList<Email> emailsList=new ArrayList<Email>(0);
 
 

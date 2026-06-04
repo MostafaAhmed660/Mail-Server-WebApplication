@@ -7,8 +7,11 @@
       persistent
     >
       <template v-slot:activator="{ on, attrs }">
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on: tipOn }">
+            <span v-on="tipOn">
         <v-btn
-            class="mx-4"
+            class="mx-1 email-plus-btn"
             icon
             color="primary"
             v-bind="attrs" 
@@ -16,10 +19,18 @@
         >
             <v-icon>mdi-email-plus-outline</v-icon>
         </v-btn>
+            </span>
+          </template>
+          <span>Add email</span>
+        </v-tooltip>
 
       </template>
 
-      <v-card>
+      <v-card class="menu-card">
+        <v-card-title class="menu-title">
+          <v-icon color="primary" class="mr-2">mdi-email-plus-outline</v-icon>
+          Add Email
+        </v-card-title>
         <v-list>
           <v-list-item>
             <v-col>
@@ -27,6 +38,9 @@
                 <v-text-field
                     v-model="newEmail"
                     placeholder="Enter New Email Here"
+                    outlined
+                    dense
+                    rounded
                     required
                 ></v-text-field>
             </v-col>
@@ -37,8 +51,8 @@
 
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn text @click="menu = false">Cancel</v-btn>
-          <v-btn color="primary" @click="add()">Add</v-btn>
+          <v-btn text class="ms-action-btn" @click="menu = false">Cancel</v-btn>
+          <v-btn color="primary" dark class="ms-action-btn" @click="add()">Add</v-btn>
         </v-card-actions>
 
       </v-card>
@@ -69,5 +83,25 @@
   }
 </script>
 <style scoped>
+.email-plus-btn {
+  background: rgba(255, 144, 98, 0.1);
+}
 
+.menu-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.menu-title {
+  background: rgba(255, 144, 98, 0.08);
+  color: var(--ms-text);
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--ms-text);
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
 </style>

@@ -75,10 +75,28 @@ public class WithFiles {
 			User u = (User)decoder.readObject();
 			decoder.close();
 			fis.close();
+			
+			// Rebuild File objects in folders since they are transient
+			if (u != null && u.getDefaultFolders() != null) {
+				for (Folder f : u.getDefaultFolders()) {
+					if (f.getPath() != null) {
+						f.setFile(new File(f.getPath()));
+					}
+				}
+			}
+			if (u != null && u.getUserFolders() != null) {
+				for (Folder f : u.getUserFolders()) {
+					if (f.getPath() != null) {
+						f.setFile(new File(f.getPath()));
+					}
+				}
+			}
+			
 			return u;
 		}
 		catch(Exception e) {
 			System.out.println("error in reading user's file");
+			e.printStackTrace();
 			return null;
 		}		
 	}

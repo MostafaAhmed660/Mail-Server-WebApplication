@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.1" class="java.beans.XMLDecoder">
+ <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.User" id="User0">
+  <void property="defaultFolders">
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>defaultInbox</string>
+     </void>
+     <void property="path">
+      <string>C:\Users\Moham\Desktop\prog\projects\Mail-Server-WebApplication\Back-end\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\fsdljalf@fjslk.com\defaultInbox</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>priorityInbox</string>
+     </void>
+     <void property="path">
+      <string>C:\Users\Moham\Desktop\prog\projects\Mail-Server-WebApplication\Back-end\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\fsdljalf@fjslk.com\priorityInbox</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>trash</string>
+     </void>
+     <void property="path">
+      <string>C:\Users\Moham\Desktop\prog\projects\Mail-Server-WebApplication\Back-end\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\fsdljalf@fjslk.com\trash</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>drafts</string>
+     </void>
+     <void property="path">
+      <string>C:\Users\Moham\Desktop\prog\projects\Mail-Server-WebApplication\Back-end\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\fsdljalf@fjslk.com\drafts</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="eg.edu.alexu.csd.oop.email.cs23.demo.Model.UserManagment.Folder">
+     <void property="name">
+      <string>sentEmails</string>
+     </void>
+     <void property="path">
+      <string>C:\Users\Moham\Desktop\prog\projects\Mail-Server-WebApplication\Back-end\eg.edu.alexu.csd.oop.email.cs231.thisisit.endone\users\fsdljalf@fjslk.com\sentEmails</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="emailAddress">
+   <string>fsdljalf@fjslk.com</string>
+  </void>
+  <void property="passWord">
+   <string>fslkjalf</string>
+  </void>
+  <void property="userName">
+   <string>fdskjf</string>
+  </void>
+ </object>
+</java>

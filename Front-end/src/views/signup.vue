@@ -1,121 +1,149 @@
 <template>
     <v-img
-        src="..\assets\background.jpg" 
-        height="100" 
+        src="../assets/background.jpg" 
+        height="100vh"
+        class="d-flex align-center justify-center"
     >
-    
         <v-card 
-            class="mx-auto my-10"
-            max-width="400"
+            class="auth-card rounded-xl pa-6 elevation-16 mx-auto"
+            max-width="440"
+            width="100%"
+            style="background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(12px);"
         >
-                <v-card-title primary-title class="layout justify-center">
-                    <h1>SIGN-UP</h1>
-                </v-card-title>
+            <v-card-title class="layout justify-center flex-column pb-4">
+                <div class="d-flex align-center mb-2">
+                    <v-icon size="40" color="#FF9062" class="mr-2">mdi-account-plus</v-icon>
+                    <h1 class="text-h4 font-weight-bold" style="color: #2d3142; letter-spacing: -0.5px;">Join MailSphere</h1>
+                </div>
+                <span class="text-subtitle-2 text-center text--secondary">Create a new secure email account</span>
+            </v-card-title>
 
-                <v-divider></v-divider>
+            <v-divider class="mb-4"></v-divider>
 
-                <v-card-text primary-title class="justify-center">
-                    <v-col>
-                    <h2>User-name</h2>
+            <v-card-text class="pt-0">
+                <v-form @submit.prevent="Checksignup">
+                    <v-col cols="12" class="py-1">
+                        <label class="text-subtitle-2 font-weight-medium mb-1 d-block text--primary">Username</label>
                         <v-text-field
-                        v-model="userName"
-                        placeholder="Enter your username here"
-                        :error-messages="nameErrors"
-                        :counter="30"
-                        required
-                        @input="$v.userName.$touch()"
-                        @blur="$v.userName.$touch()"
+                            v-model="userName"
+                            :error-messages="nameErrors"
+                            :counter="30"
+                            required
+                            outlined
+                            dense
+                            prepend-inner-icon="mdi-account-outline"
+                            placeholder="Enter your username"
+                            class="rounded-lg"
+                            @input="$v.userName.$touch()"
+                            @blur="$v.userName.$touch()"
                         ></v-text-field>
                     </v-col>
 
-                    <v-col>
-                    <h2>E-mail</h2>
+                    <v-col cols="12" class="py-1">
+                        <label class="text-subtitle-2 font-weight-medium mb-1 d-block text--primary">E-mail Address</label>
                         <v-text-field
-                          v-model="EmailAddress"
-                          :error-messages="emailErrors"
-                          placeholder="Enter your email here"
-                          required
-                          @input="$v.EmailAddress.$touch()"
-                          @blur="$v.EmailAddress.$touch()"
-                      ></v-text-field>
+                            v-model="EmailAddress"
+                            :error-messages="emailErrors"
+                            required
+                            outlined
+                            dense
+                            prepend-inner-icon="mdi-email-outline"
+                            placeholder="username@domain.com"
+                            class="rounded-lg"
+                            @input="$v.EmailAddress.$touch()"
+                            @blur="$v.EmailAddress.$touch()"
+                        ></v-text-field>
                     </v-col>
 
-                    <v-col>
-                    <h2>Password</h2>
+                    <v-col cols="12" class="py-1">
+                        <label class="text-subtitle-2 font-weight-medium mb-1 d-block text--primary">Password</label>
                         <v-text-field
-                          v-model="password"
-                          :error-messages="passwordErrors"
-                          :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
-                          :rules="[rules.required, rules.min]"
-                          :type="showPassword ? 'text' : 'password'"
-                          name="input-10-1"
-                          placeholder="Enter your password here"
-                          hint="At least 8 characters"
-                          counter
-                          required
-                          @input="$v.password.$touch()"
-                          @blur="$v.password.$touch()"
-                          @click:append="showPassword = !showPassword"
-                      ></v-text-field>
+                            v-model="password"
+                            :error-messages="passwordErrors"
+                            :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+                            :rules="[rules.required, rules.min]"
+                            :type="showPassword ? 'text' : 'password'"
+                            name="input-10-1"
+                            hint="At least 8 characters"
+                            counter
+                            required
+                            outlined
+                            dense
+                            prepend-inner-icon="mdi-lock-outline"
+                            placeholder="Create password"
+                            class="rounded-lg"
+                            @input="$v.password.$touch()"
+                            @blur="$v.password.$touch()"
+                            @click:append="showPassword = !showPassword"
+                        ></v-text-field>
                     </v-col>
-                    <v-col>
-                    <h2>Confirm Password</h2>
-                         <v-text-field
+
+                    <v-col cols="12" class="py-1">
+                        <label class="text-subtitle-2 font-weight-medium mb-1 d-block text--primary">Confirm Password</label>
+                        <v-text-field
                             v-model="confirmPassword"
                             :error-messages="confirmPasswordErrors"
                             :append-icon="showPassword1 ? 'mdi-eye' : 'mdi-eye-off'"
                             :rules="[rules.required]"
                             :type="showPassword1 ? 'text' : 'password'"
                             name="input-10-2"
-                            placeholder="Confirm your password here"
+                            placeholder="Confirm your password"
                             required
                             counter
+                            outlined
+                            dense
+                            prepend-inner-icon="mdi-lock-check-outline"
+                            class="rounded-lg"
                             @input="$v.confirmPassword.$touch()"
                             @blur="$v.confirmPassword.$touch()"
                             @click:append="showPassword1 = !showPassword1"
                         ></v-text-field>
                     </v-col>
 
-                    <v-divider></v-divider>
+                    <v-divider class="my-4"></v-divider>
 
-                    <v-card-actions>
-                        <v-spacer></v-spacer>
-                        <v-btn to="/">
-                            log-in
-                        </v-btn>
-                        <v-spacer></v-spacer>
-
+                    <v-card-actions class="d-flex flex-column gap-2 px-0">
                         <v-btn 
-                        color="#FF9062" 
-                        @click="Checksignup"
+                            color="#FF9062" 
+                            dark
+                            block
+                            large
+                            elevation="2"
+                            class="rounded-lg font-weight-bold"
+                            style="text-transform: none; font-size: 1.05rem;"
+                            type="submit"
+                            :loading="loading"
                         >
-                            Sign-up
+                            Sign Up
                         </v-btn>
                         
-                        <v-snackbar
-                            v-model="snackbar"
+                        <div class="text-center mt-4 w-100">
+                            <span class="text-caption text--secondary mr-1">Already have an account?</span>
+                            <router-link to="/" class="text-caption font-weight-bold" style="color: #FF9062; text-decoration: none;">Log in here</router-link>
+                        </div>
+                    </v-card-actions>
+                </v-form>
+                
+                <v-snackbar
+                    v-model="snackbar"
+                    timeout="3000"
+                    rounded="pill"
+                    color="grey darken-3"
+                >
+                    {{ message }}
+                    <template v-slot:action="{ attrs }">
+                        <v-btn
+                            color="#FF9062"
+                            text
+                            v-bind="attrs"
+                            @click="snackbar = false"
                         >
-                            {{ message }}
-
-                            <template v-slot:action="{ attrs }">
-                                <v-btn
-                                color="blue"
-                                text
-                                v-bind="attrs"
-                                @click="snackbar = false"
-                                >
-                                Close
-                                </v-btn>
-                            </template>
-                        </v-snackbar>
-                    <v-spacer></v-spacer>
-                </v-card-actions>
+                            Close
+                        </v-btn>
+                    </template>
+                </v-snackbar>
             </v-card-text>
-
         </v-card>
-  
-  
-  
     </v-img>
 </template>
 
@@ -144,6 +172,7 @@ export default {
         showPassword1 : false ,
         snackbar : false ,
         message : '',
+        loading : false ,
         rules: {
             required: value => !!value || 'Required.',
             min: v => v.length >= 8 || 'Min 8 characters',
@@ -183,6 +212,7 @@ export default {
     },
     methods : {
         Checksignup : function(){
+            this.loading = true ;
             axios.get('http://localhost:8080/api/signUp',{
                 params: {
                     emailaddress : this.EmailAddress,
@@ -192,6 +222,8 @@ export default {
             }).then(Response=>{
                 const Data = Response.data;
                 this.message = Data ;
+            }).finally(()=>{
+                this.loading = false ;
             });
             this.snackbar = true ;
         }
@@ -199,6 +231,27 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.auth-card {
+    animation: auth-card-in 360ms ease both;
+}
 
+.v-text-field--outlined >>> fieldset {
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.v-text-field--outlined.v-input--is-focused >>> fieldset {
+    border-color: #FF9062 !important;
+}
+
+@keyframes auth-card-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 </style>
